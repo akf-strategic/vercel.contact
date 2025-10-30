@@ -3,6 +3,7 @@ import { Header } from "@/components/header";
 import { SearchSection } from "@/components/search-section";
 import { SectionsWrapper } from "@/components/sections-wrapper";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import data from "./data.json";
 
 interface Contact {
@@ -66,10 +67,14 @@ export default function Home() {
         {/* Main Content */}
         <main className="max-w-3xl mx-auto px-6 py-8">
           {/* Search Box */}
-          <SearchSection />
+          <Suspense fallback={<div className="mb-6 h-10" />}>
+            <SearchSection />
+          </Suspense>
 
           {/* Sections List - Server Component */}
-          <SectionsWrapper sections={sections} />
+          <Suspense fallback={<div className="animate-pulse space-y-4" />}>
+            <SectionsWrapper sections={sections} />
+          </Suspense>
         </main>
 
         <Footer />
