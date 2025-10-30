@@ -62,8 +62,21 @@ export function ContactsPopover({ contacts }: ContactsPopoverProps) {
       <div className="md:hidden">
         <Popover>
           <PopoverTrigger asChild>
-            <button className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors font-medium">
-              ▲ show
+            <button className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors font-medium flex items-center gap-1">
+              <svg
+                height="12"
+                viewBox="0 0 16 16"
+                width="12"
+                className="inline-block"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M8 1L16 15H0L8 1Z"
+                  fill="currentColor"
+                />
+              </svg>{" "}
+              show
             </button>
           </PopoverTrigger>
           <PopoverContent className="w-48 p-2">
@@ -110,8 +123,21 @@ export function ContactsPopover({ contacts }: ContactsPopoverProps) {
         {contacts.length > desktopDisplayCount && (
           <Popover>
             <PopoverTrigger asChild>
-              <button className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors font-medium">
-                ▲ show
+              <button className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors font-medium flex items-center gap-1">
+                <svg
+                  height="12"
+                  viewBox="0 0 16 16"
+                  width="12"
+                  className="inline-block"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M8 1L16 15H0L8 1Z"
+                    fill="currentColor"
+                  />
+                </svg>{" "}
+                show
               </button>
             </PopoverTrigger>
             <PopoverContent className="w-48 p-2">

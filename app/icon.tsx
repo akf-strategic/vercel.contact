@@ -1,8 +1,5 @@
 import { ImageResponse } from "next/og";
 
-// Route segment config
-export const runtime = "edge";
-
 // Image metadata
 export const size = {
   width: 32,
@@ -16,7 +13,6 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 24,
           background: "black",
           width: "100%",
           height: "100%",
@@ -26,7 +22,19 @@ export default function Icon() {
           color: "white",
         }}
       >
-        ▲
+        <svg
+          height="24"
+          viewBox="0 0 16 16"
+          width="24"
+          style={{ color: "white" }}
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M8 1L16 15H0L8 1Z"
+            fill="currentColor"
+          />
+        </svg>
       </div>
     ),
     {

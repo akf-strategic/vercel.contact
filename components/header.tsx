@@ -9,8 +9,21 @@ export function Header() {
       <div className="max-w-3xl mx-auto px-6 py-3">
         <div className="flex flex-col gap-3">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-semibold text-black dark:text-white">
-              who to contact at ▲
+            <h1 className="text-2xl font-semibold text-black dark:text-white flex items-center gap-2">
+              who to contact at{" "}
+              <svg
+                height="16"
+                viewBox="0 0 16 16"
+                width="16"
+                className="inline-block"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M8 1L16 15H0L8 1Z"
+                  fill="currentColor"
+                />
+              </svg>
             </h1>
             <ThemeSwitcher />
           </div>

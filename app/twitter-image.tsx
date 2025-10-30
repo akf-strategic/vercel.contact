@@ -32,7 +32,21 @@ export default async function Image() {
           fontFamily: "Inter",
         }}
       >
-        <div style={{ fontSize: 128, marginBottom: 20 }}>▲</div>
+        <div style={{ marginBottom: 40 }}>
+          <svg
+            height="128"
+            viewBox="0 0 16 16"
+            width="128"
+            style={{ color: "white" }}
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M8 1L16 15H0L8 1Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
         <div style={{ fontSize: 48, marginBottom: 10 }}>
           Vercel Contacts Directory
         </div>

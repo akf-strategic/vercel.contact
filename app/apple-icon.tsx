@@ -16,7 +16,6 @@ export default function AppleIcon() {
     (
       <div
         style={{
-          fontSize: 96,
           background: "black",
           width: "100%",
           height: "100%",
@@ -26,7 +25,19 @@ export default function AppleIcon() {
           color: "white",
         }}
       >
-        ▲
+        <svg
+          height="120"
+          viewBox="0 0 16 16"
+          width="120"
+          style={{ color: "white" }}
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M8 1L16 15H0L8 1Z"
+            fill="currentColor"
+          />
+        </svg>
       </div>
     ),
     {
