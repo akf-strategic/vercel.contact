@@ -9,6 +9,7 @@ export function Footer() {
             className="underline hover:text-black dark:hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit @strehldev on X (opens in new tab)"
           >
             @strehldev on X
           </a>
@@ -18,8 +19,9 @@ export function Footer() {
             className="underline hover:text-black dark:hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit original who-to-bother-at.vercel.app (opens in new tab)"
           >
-            https://who-to-bother-at.vercel.app/
+            who-to-bother-at.vercel.app
           </a>
         </p>
       </div>

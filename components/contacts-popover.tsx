@@ -1,11 +1,11 @@
 "use client";
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import Image from "next/image";
 
 interface Contact {
   name: string;
@@ -17,8 +17,16 @@ interface ContactsPopoverProps {
   contacts: Contact[];
 }
 
+const getInitials = (name: string) => {
+  // Remove @ symbol and get first two characters
+  const cleanName = name.replace("@", "");
+  return cleanName.slice(0, 2).toUpperCase();
+};
+
 const ContactLink = ({ contact }: { contact: Contact }) => {
   const username = contact.name.replace("@", "");
+  const initials = getInitials(contact.name);
+
   return (
     <a
       href={contact.href}
@@ -26,13 +34,15 @@ const ContactLink = ({ contact }: { contact: Contact }) => {
       rel="noopener noreferrer"
       className="flex items-center gap-1.5 text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors"
     >
-      <Image
-        src={`https://unavatar.io/twitter/${username}`}
-        alt={contact.name}
-        width={20}
-        height={20}
-        className="rounded-full"
-      />
+      <Avatar className="size-5">
+        <AvatarImage
+          src={`https://unavatar.io/twitter/${username}`}
+          alt={contact.name}
+        />
+        <AvatarFallback className="text-[10px] bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
+          {initials}
+        </AvatarFallback>
+      </Avatar>
       <span>{contact.name}</span>
     </a>
   );
@@ -56,6 +66,7 @@ export function ContactsPopover({ contacts }: ContactsPopoverProps) {
             <div className="space-y-1">
               {contacts.map((contact, idx) => {
                 const username = contact.name.replace("@", "");
+                const initials = getInitials(contact.name);
                 return (
                   <a
                     key={idx}
@@ -64,13 +75,15 @@ export function ContactsPopover({ contacts }: ContactsPopoverProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 px-2 py-1.5 rounded hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
                   >
-                    <Image
-                      src={`https://unavatar.io/twitter/${username}`}
-                      alt={contact.name}
-                      width={20}
-                      height={20}
-                      className="rounded-full"
-                    />
+                    <Avatar className="size-5">
+                      <AvatarImage
+                        src={`https://unavatar.io/twitter/${username}`}
+                        alt={contact.name}
+                      />
+                      <AvatarFallback className="text-[10px] bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
+                        {initials}
+                      </AvatarFallback>
+                    </Avatar>
                     <span className="text-xs text-black dark:text-white">
                       {contact.name}
                     </span>
@@ -98,6 +111,7 @@ export function ContactsPopover({ contacts }: ContactsPopoverProps) {
               <div className="space-y-1">
                 {contacts.slice(desktopDisplayCount).map((contact, idx) => {
                   const username = contact.name.replace("@", "");
+                  const initials = getInitials(contact.name);
                   return (
                     <a
                       key={idx}
@@ -106,13 +120,15 @@ export function ContactsPopover({ contacts }: ContactsPopoverProps) {
                       rel="noopener noreferrer"
                       className="flex items-center gap-1.5 px-2 py-1.5 rounded hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
                     >
-                      <Image
-                        src={`https://unavatar.io/twitter/${username}`}
-                        alt={contact.name}
-                        width={20}
-                        height={20}
-                        className="rounded-full"
-                      />
+                      <Avatar className="size-5">
+                        <AvatarImage
+                          src={`https://unavatar.io/twitter/${username}`}
+                          alt={contact.name}
+                        />
+                        <AvatarFallback className="text-[10px] bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
+                          {initials}
+                        </AvatarFallback>
+                      </Avatar>
                       <span className="text-xs text-black dark:text-white">
                         {contact.name}
                       </span>

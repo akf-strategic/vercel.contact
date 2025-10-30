@@ -52,7 +52,7 @@ export function SectionsList({ sections, searchQuery }: SectionsListProps) {
 
   if (filteredSections.length === 0) {
     return (
-      <div className="text-center py-12">
+      <div className="text-center py-12" role="status" aria-live="polite">
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
           No results found for &ldquo;{searchQuery}&rdquo;
         </p>
@@ -61,13 +61,16 @@ export function SectionsList({ sections, searchQuery }: SectionsListProps) {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8" role="region" aria-label="Contact sections">
       {filteredSections.map((section) => (
-        <section key={section.name}>
-          <h2 className="text-xs font-medium text-zinc-500 dark:text-zinc-500 uppercase tracking-wider mb-4">
+        <section key={section.name} aria-labelledby={`section-${section.name}`}>
+          <h2
+            id={`section-${section.name}`}
+            className="text-xs font-medium text-zinc-500 dark:text-zinc-500 uppercase tracking-wider mb-4"
+          >
             {section.name}
           </h2>
-          <div className="space-y-0 border border-zinc-200 dark:border-zinc-800 rounded-lg overflow-hidden">
+          <ul className="space-y-0 border border-zinc-200 dark:border-zinc-800 rounded-lg overflow-hidden">
             {section.items.map((item, index) => {
               const contacts = Array.isArray(item.contacts)
                 ? item.contacts
@@ -75,7 +78,7 @@ export function SectionsList({ sections, searchQuery }: SectionsListProps) {
               const allContactNames = contacts.map((c) => c.name).join(" ");
 
               return (
-                <div
+                <li
                   key={item.name}
                   className={`group flex items-center justify-between px-4 py-3 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors ${
                     index !== section.items.length - 1
@@ -92,10 +95,10 @@ export function SectionsList({ sections, searchQuery }: SectionsListProps) {
                   <div className="flex items-center gap-2 ml-4">
                     <ContactsPopover contacts={contacts} />
                   </div>
-                </div>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </section>
       ))}
     </div>

@@ -14,7 +14,7 @@ export function Header() {
             </h1>
             <ThemeSwitcher />
           </div>
-          <div>
+          <nav aria-label="Site information">
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
               This is a community-maintained list and not officially affiliated
               with Vercel. For official support, use the{" "}
@@ -23,16 +23,17 @@ export function Header() {
                 className="underline hover:text-black dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Vercel Community (opens in new tab)"
               >
                 Vercel Community
               </a>
               .
             </p>
-            <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-500 flex">
-              Click the <CopyIcon className="size-4 mx-2" />
+            <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-500 flex items-center">
+              Click the <CopyIcon className="size-4 mx-2" aria-hidden="true" />
               any topic to copy all contacts
             </p>
-          </div>
+          </nav>
         </div>
       </div>
     </header>

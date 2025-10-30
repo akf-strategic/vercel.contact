@@ -9,8 +9,8 @@ export function SearchSection() {
   });
 
   return (
-    <div className="mb-6">
+    <section className="mb-6" aria-label="Search contacts">
       <SearchInput value={searchQuery} onChange={setSearchQuery} />
-    </div>
+    </section>
   );
 }
