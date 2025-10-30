@@ -20,6 +20,8 @@ const nextConfig: NextConfig = {
     ],
     // Optimize images
     formats: ["image/avif", "image/webp"],
+    // Cache avatar images for 30 days
+    minimumCacheTTL: 2592000, // 30 days in seconds
   },
 
   // Compiler optimizations
