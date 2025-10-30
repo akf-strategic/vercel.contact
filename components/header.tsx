@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeSwitcher } from "@/components/theme-switcher";
 import { CopyIcon } from "lucide-react";
 
 export function Header() {
@@ -25,7 +24,6 @@ export function Header() {
                 />
               </svg>
             </h1>
-            <ThemeSwitcher />
           </div>
           <nav aria-label="Site information">
             <p className="text-sm text-zinc-600 dark:text-zinc-400">

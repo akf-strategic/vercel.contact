@@ -1,7 +1,5 @@
 import { ImageResponse } from "next/og";
 
-// Route segment config
-export const runtime = "edge";
 export const alt = "Vercel Contacts Directory";
 export const size = {
   width: 1200,
