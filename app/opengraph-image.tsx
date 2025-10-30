@@ -1,6 +1,4 @@
-import fs from "fs";
 import { ImageResponse } from "next/og";
-import path from "path";
 
 export const alt = "Vercel Contacts Directory";
 export const size = {
@@ -11,10 +9,6 @@ export const contentType = "image/png";
 
 // Image generation
 export default async function Image() {
-  // Load font from local file
-  const fontPath = path.join(process.cwd(), "public/fonts/inter-400.ttf");
-  const fontData = fs.readFileSync(fontPath);
-
   return new ImageResponse(
     (
       <div
@@ -28,10 +22,9 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           color: "white",
-          fontFamily: "Inter",
         }}
       >
-        <div style={{ marginBottom: 40 }}>
+        <div style={{ marginBottom: 40, display: "flex" }}>
           <svg
             height="128"
             viewBox="0 0 16 16"
@@ -46,7 +39,7 @@ export default async function Image() {
             />
           </svg>
         </div>
-        <div style={{ fontSize: 48, marginBottom: 10 }}>
+        <div style={{ fontSize: 48, marginBottom: 10, display: "flex" }}>
           Vercel Contacts Directory
         </div>
         <div
@@ -55,6 +48,7 @@ export default async function Image() {
             color: "#666",
             textAlign: "center",
             maxWidth: "80%",
+            display: "flex",
           }}
         >
           Community-maintained contacts for Vercel technologies and products
@@ -63,14 +57,6 @@ export default async function Image() {
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: "Inter",
-          data: fontData,
-          style: "normal",
-          weight: 400,
-        },
-      ],
     }
   );
 }

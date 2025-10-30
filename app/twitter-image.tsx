@@ -9,11 +9,6 @@ export const contentType = "image/png";
 
 // Image generation
 export default async function Image() {
-  // Fetch font data
-  const fontData = await fetch(
-    "https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2"
-  ).then((res) => res.arrayBuffer());
-
   return new ImageResponse(
     (
       <div
@@ -27,10 +22,9 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           color: "white",
-          fontFamily: "Inter",
         }}
       >
-        <div style={{ marginBottom: 40 }}>
+        <div style={{ marginBottom: 40, display: "flex" }}>
           <svg
             height="128"
             viewBox="0 0 16 16"
@@ -45,7 +39,7 @@ export default async function Image() {
             />
           </svg>
         </div>
-        <div style={{ fontSize: 48, marginBottom: 10 }}>
+        <div style={{ fontSize: 48, marginBottom: 10, display: "flex" }}>
           Vercel Contacts Directory
         </div>
         <div
@@ -54,6 +48,7 @@ export default async function Image() {
             color: "#666",
             textAlign: "center",
             maxWidth: "80%",
+            display: "flex",
           }}
         >
           Community-maintained contacts for Vercel technologies and products
@@ -62,14 +57,6 @@ export default async function Image() {
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: "Inter",
-          data: fontData,
-          style: "normal",
-          weight: 400,
-        },
-      ],
     }
   );
 }
