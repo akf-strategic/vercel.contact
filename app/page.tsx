@@ -21,10 +21,6 @@ interface Section {
   items: Item[];
 }
 
-// Force static generation since data is static
-export const dynamic = "force-static";
-export const revalidate = false;
-
 // Enhanced page metadata
 export const metadata: Metadata = {
   title: "Vercel Contacts Directory | Find Vercel Technology Contacts",
