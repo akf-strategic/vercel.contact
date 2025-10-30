@@ -1,4 +1,6 @@
+import fs from "fs";
 import { ImageResponse } from "next/og";
+import path from "path";
 
 export const alt = "Vercel Contacts Directory";
 export const size = {
@@ -9,10 +11,9 @@ export const contentType = "image/png";
 
 // Image generation
 export default async function Image() {
-  // Fetch font data
-  const fontData = await fetch(
-    "https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2"
-  ).then((res) => res.arrayBuffer());
+  // Load font from local file
+  const fontPath = path.join(process.cwd(), "public/fonts/inter-400.ttf");
+  const fontData = fs.readFileSync(fontPath);
 
   return new ImageResponse(
     (
