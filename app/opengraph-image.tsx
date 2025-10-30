@@ -24,6 +24,7 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           color: "white",
+          fontFamily: "Geist, system-ui, -apple-system, sans-serif",
         }}
       >
         <div style={{ fontSize: 128, marginBottom: 20 }}>▲</div>
@@ -44,6 +45,16 @@ export default async function Image() {
     ),
     {
       ...size,
+      fonts: [
+        {
+          name: "Geist",
+          data: await fetch(
+            new URL("https://vercel.com/font/geist-sans/Geist-Regular.woff")
+          ).then((res) => res.arrayBuffer()),
+          style: "normal",
+          weight: 400,
+        },
+      ],
     }
   );
 }
