@@ -1,0 +1,392 @@
+{
+  "sections": [
+    {
+      "name": "Frameworks & OSS",
+      "items": [
+        {
+          "name": "Next.js",
+          "contacts": {
+            "name": "@timneutkens",
+            "href": "https://x.com/timneutkens",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Nuxt.js",
+          "contacts": {
+            "name": "@Atinux",
+            "href": "https://x.com/Atinux",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Turbopack",
+          "contacts": {
+            "name": "@timneutkens",
+            "href": "https://x.com/timneutkens",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Turborepo",
+          "contacts": {
+            "name": "@anthonysheww",
+            "href": "https://x.com/anthonysheww",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "shadcn/ui",
+          "contacts": {
+            "name": "@shadcn",
+            "href": "https://x.com/shadcn",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Workflows",
+          "contacts": {
+            "name": "@TooTallNate",
+            "href": "https://x.com/TooTallNate",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "AI Elements / Streamdown / next-forge",
+          "contacts": {
+            "name": "@haydenbleasel",
+            "href": "https://x.com/haydenbleasel",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "tweakcn",
+          "contacts": {
+            "name": "@iamsahaj_xyz",
+            "href": "https://x.com/iamsahaj_xyz",
+            "platform": "x"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Public Vercel Sites & Community",
+      "items": [
+        {
+          "name": "Community",
+          "contacts": [
+            {
+              "name": "@GabbyShires",
+              "href": "https://x.com/GabbyShires",
+              "platform": "x"
+            },
+            {
+              "name": "@paulienuh",
+              "href": "https://x.com/paulienuh",
+              "platform": "x"
+            },
+            {
+              "name": "@AmyAEgan",
+              "href": "https://x.com/AmyAEgan",
+              "platform": "x"
+            },
+            {
+              "name": "@jacobmparis",
+              "href": "https://x.com/jacobmparis",
+              "platform": "x"
+            },
+            {
+              "name": "@sun_anshuman",
+              "href": "https://x.com/sun_anshuman",
+              "platform": "x"
+            },
+            {
+              "name": "@kapehe_ok",
+              "href": "https://x.com/kapehe_ok",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Blog / Changelog / Marketing pages / Event pages",
+          "contacts": {
+            "name": "@ZeeJab",
+            "href": "https://x.com/ZeeJab",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Vercel Sites",
+          "contacts": {
+            "name": "@plmrry",
+            "href": "https://x.com/plmrry",
+            "platform": "x"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Vercel products",
+      "items": [
+        {
+          "name": "Domains",
+          "contacts": [
+            {
+              "name": "@RhysSullivan",
+              "href": "https://x.com/RhysSullivan",
+              "platform": "x"
+            },
+            {
+              "name": "@ethanniser",
+              "href": "https://x.com/ethanniser",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Functions / Runtime / Compute",
+          "contacts": [
+            {
+              "name": "@tomlienard",
+              "href": "https://x.com/tomlienard",
+              "platform": "x"
+            },
+            {
+              "name": "@dglsparsons",
+              "href": "https://x.com/dglsparsons",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Builds",
+          "contacts": [
+            {
+              "name": "@SheardLuke",
+              "href": "https://x.com/SheardLuke",
+              "platform": "x"
+            },
+            {
+              "name": "@gudmundur",
+              "href": "https://x.com/gudmundur",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Observability / Speed Insights / Web Analytics",
+          "contacts": [
+            {
+              "name": "@linstobias",
+              "href": "https://x.com/linstobias",
+              "platform": "x"
+            },
+            {
+              "name": "@malavikabala",
+              "href": "https://x.com/malavikabala",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Auth",
+          "contacts": {
+            "name": "@okbel",
+            "href": "https://x.com/okbel",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Toolbar",
+          "contacts": {
+            "name": "@gkaragkiaouris",
+            "href": "https://x.com/gkaragkiaouris",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Dashboard",
+          "contacts": [
+            {
+              "name": "@witsdev",
+              "href": "https://x.com/witsdev",
+              "platform": "x"
+            },
+            {
+              "name": "@z0oks",
+              "href": "https://x.com/z0oks",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Marketplace / Integrations",
+          "contacts": {
+            "name": "@th_mdo",
+            "href": "https://x.com/th_mdo",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Enterprise",
+          "contacts": {
+            "name": "@sceiler",
+            "href": "https://x.com/sceiler",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Image Optimization",
+          "contacts": {
+            "name": "@styfle",
+            "href": "https://x.com/styfle",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "BotID",
+          "contacts": {
+            "name": "@andrewqu",
+            "href": "https://x.com/andrewqu",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Vercel Agent",
+          "contacts": {
+            "name": "@JohnPhamous",
+            "href": "https://x.com/JohnPhamous",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Sandbox",
+          "contacts": {
+            "name": "@gudmundur",
+            "href": "https://x.com/gudmundur",
+            "platform": "x"
+          }
+        }
+      ]
+    },
+    {
+      "name": "v0 & AI",
+      "items": [
+        {
+          "name": "v0",
+          "contacts": [
+            {
+              "name": "@max_leiter",
+              "href": "https://x.com/max_leiter",
+              "platform": "x"
+            },
+            {
+              "name": "@EstebanSuarez",
+              "href": "https://x.com/EstebanSuarez",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "v0 Enterprise",
+          "contacts": {
+            "name": "@TheWuster935",
+            "href": "https://x.com/TheWuster935",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "v0 Design Systems",
+          "contacts": {
+            "name": "@TheWuster935",
+            "href": "https://x.com/TheWuster935",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "AI SDK",
+          "contacts": {
+            "name": "@nishimiya",
+            "href": "https://x.com/nishimiya",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "AI Gateway",
+          "contacts": {
+            "name": "@rtaneja_",
+            "href": "https://x.com/rtaneja_",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "MCP",
+          "contacts": [
+            {
+              "name": "@allenzhou101",
+              "href": "https://x.com/allenzhou101",
+              "platform": "x"
+            },
+            {
+              "name": "@andrewqu",
+              "href": "https://x.com/andrewqu",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Next.js Evals",
+          "contacts": {
+            "name": "@MattLenhard",
+            "href": "https://x.com/MattLenhard",
+            "platform": "x"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "items": [
+        {
+          "name": "Mobile",
+          "contacts": {
+            "name": "@FernandoTheRojo",
+            "href": "https://x.com/FernandoTheRojo",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Architecture / Implementation questions",
+          "contacts": {
+            "name": "@philzona",
+            "href": "https://x.com/philzona",
+            "platform": "x"
+          }
+        },
+        {
+          "name": "Vercel Professional Services",
+          "contacts": [
+            {
+              "name": "@dom_sipowicz",
+              "href": "https://x.com/dom_sipowicz",
+              "platform": "x"
+            },
+            {
+              "name": "@goncy",
+              "href": "https://x.com/goncy",
+              "platform": "x"
+            }
+          ]
+        },
+        {
+          "name": "Terraform Support",
+          "contacts": {
+            "name": "@dglsparsons",
+            "href": "https://x.com/dglsparsons",
+            "platform": "x"
+          }
+        }
+      ]
+    }
+  ]
+}
