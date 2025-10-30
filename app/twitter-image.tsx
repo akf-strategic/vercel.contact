@@ -11,6 +11,11 @@ export const contentType = "image/png";
 
 // Image generation
 export default async function Image() {
+  // Fetch font data
+  const fontData = await fetch(
+    "https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2"
+  ).then((res) => res.arrayBuffer());
+
   return new ImageResponse(
     (
       <div
@@ -24,7 +29,7 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           color: "white",
-          fontFamily: "Geist, system-ui, -apple-system, sans-serif",
+          fontFamily: "Inter",
         }}
       >
         <div style={{ fontSize: 128, marginBottom: 20 }}>▲</div>
@@ -47,10 +52,8 @@ export default async function Image() {
       ...size,
       fonts: [
         {
-          name: "Geist",
-          data: await fetch(
-            new URL("https://vercel.com/font/geist-sans/Geist-Regular.woff")
-          ).then((res) => res.arrayBuffer()),
+          name: "Inter",
+          data: fontData,
           style: "normal",
           weight: 400,
         },
